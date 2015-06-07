@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.feature "UserLooksAtLeaderboards", type: :feature do
 
   scenario "user looks at leaderboard" do
-    Fabricate(:user, first_name: "Brennan", last_name: "Willingham")
+    Fabricate(:student, first_name: "Brennan", last_name: "Willingham")
     visit students_path
     page.should have_css(".leaderboard")
     within("ul.leaderboard") do
