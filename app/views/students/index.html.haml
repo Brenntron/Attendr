@@ -1,0 +1,8 @@
+%h1 Leaderboard
+
+%ul.leaderboard
+  -@students.each do |student|
+    %li
+      #{student.first_name}, #{student.last_name}
+
+= link_to "Log Attendance", new_attendance_path

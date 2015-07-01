@@ -1,0 +1,4 @@
+= simple_form_for attendance do |f|
+  = f.input :present
+  - f.input :date, as: :date, day: Date.today
+  = f.button :submit, "Save Attendance"

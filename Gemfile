@@ -37,6 +37,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem "haml"
 gem 'rubocop'
 gem 'simple_form'
+gem 'bourbon'
+gem 'neat'
+gem 'refills'
+gem 'bitters'
 
 group :test do
   gem 'capybara'
@@ -47,8 +51,11 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
 
+  gem 'web-console', '~> 2.0'
+
   gem 'fabrication'
   gem 'faker'
+  gem 'launchy'
   gem 'rspec-rails'
   gem 'shoulda-matchers'
 
